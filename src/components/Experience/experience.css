@@ -1,0 +1,41 @@
+.container{
+    margin: auto;
+    width: 60%;
+    justify-content: center;
+    padding: 1% 10% 1% 10%;
+    background-color: #F5F5F5;
+}
+
+.outside{
+    height: 125vh;
+    background-color: #fffaf0;
+}
+.title {
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.company{
+    font-size: 25px;
+    font-weight: bold;
+    color: teal;
+}
+#date{
+    color: black;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.position p{
+    font-size: larger;
+    font-weight: bolder;
+    color: teal;
+}
+.text li {
+    margin: 10px;
+    font-size: 20px;
+}
+

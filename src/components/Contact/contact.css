@@ -1,0 +1,23 @@
+h2{
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    font-size: 50px;
+    font-weight: 600;
+}
+#copyright {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20%;
+}
+article{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    justify-content: space-between;
+}
+
+.post {
+    z-index: 99999999;
+}
