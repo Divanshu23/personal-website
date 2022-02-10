@@ -3,7 +3,6 @@ import { ReactComponent as CloseMenu } from "./assets/x.svg";
 import { ReactComponent as MenuIcon } from "./assets/menu.svg";
 import logo from "./assets/logo.png";
 import "./navbar.css";
-import ResumeBtn from "../Resume/ResumeBtn";
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
