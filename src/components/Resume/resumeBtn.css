@@ -1,0 +1,15 @@
+.btn {
+    padding: 20px 20px 20px 20px;
+    border: none;
+    background-color: teal;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: large;
+}
+
+.btnContainer {
+    margin-top: 15%;
+    z-index: 99999;
+
+}

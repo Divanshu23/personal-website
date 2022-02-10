@@ -9,12 +9,14 @@ import ProjectList from './components/Projects/ProjectList/ProjectList';
 function App() {
   return (
     <div className="App">
-      <Particle/>
+      <Particle />
       <Navbar />
-      <Home />
-      <Experience />
-      <ProjectList />
-      <Contact />
+      <div className='sections'>
+        <Home />
+        <Experience />
+        <ProjectList />
+        <Contact />
+      </div>
     </div>
   );
 }

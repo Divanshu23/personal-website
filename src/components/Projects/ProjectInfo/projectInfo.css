@@ -1,0 +1,27 @@
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: #fffaf0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F5F5F5;
+
+}
+
+.project {
+    margin: 2%;
+    width: 30%;
+}
+
+.ptitle{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.title-desc {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 2%;
+}

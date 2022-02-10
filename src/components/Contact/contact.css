@@ -4,20 +4,36 @@ h2{
     margin-bottom: 3%;
     font-size: 50px;
     font-weight: 600;
+    color: white;
 }
 #copyright {
     font-size: 15px;
     text-align: center;
-    margin-top: 20%;
+    margin-top: 10%;
 }
-article{
-    background-color: antiquewhite;
+article{ 
+    /* background-color: antiquewhite; */
+    /* background-color: white; */
+    background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+    opacity: 0.9;
+
     display: flex;
     flex-direction: row;
-    padding: 100px;
+    padding: 90px 90px 50px 90px;
     justify-content: space-between;
 }
 
+.email-at  {
+    color: white
+}
 .post {
-    z-index: 99999999;
+    z-index: 9999;
+
+}
+
+.stuff {
+    text-align: center;
+}
+.btn{
+    margin-bottom: 5%;
 }

@@ -1,6 +1,7 @@
 .i {
   display: flex;
   height: 100vh;
+  width: 100vw;
   background-color: black;
   overflow: hidden;
 }
@@ -69,7 +70,7 @@ margin-bottom: 4%;
 .i-desc {
   width: 100%;
   margin-bottom: 5%;
-  font-size: 25px;
+  font-size: 22px;
 }
 
 .i-intro {

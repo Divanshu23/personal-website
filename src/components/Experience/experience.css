@@ -1,15 +1,17 @@
 .container{
     margin: auto;
-    width: 60%;
+    width: 60%; 
     justify-content: center;
     padding: 1% 10% 1% 10%;
     background-color: #F5F5F5;
+    
 }
 
 .outside{
-    height: 125vh;
+    overflow-x: hidden;
     background-color: #fffaf0;
 }
+
 .title {
     text-align: center;
     margin-top: 1%;

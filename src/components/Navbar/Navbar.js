@@ -3,6 +3,7 @@ import { ReactComponent as CloseMenu } from "./assets/x.svg";
 import { ReactComponent as MenuIcon } from "./assets/menu.svg";
 import logo from "./assets/logo.png";
 import "./navbar.css";
+import ResumeBtn from "../Resume/ResumeBtn";
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
@@ -16,16 +17,13 @@ const Navbar = () => {
             <div className="logo-nav">
                 <ul className={click ? "nav-options active" : "nav-options"}>
                     <li className="option" onClick={closeMobileMenu}>
-                        <a href="/#experience">EXPERIENCE</a>
+                        <a href="#experience">EXPERIENCE</a>
                     </li>
                     <li className="option" onClick={closeMobileMenu}>
-                        <a href="/#projects">PROJECTS</a>
+                        <a href="#projects">PROJECTS</a>
                     </li>
                     <li className="option" onClick={closeMobileMenu}>
-                        <a href="/resume">RESUME</a>
-                    </li>
-                    <li className="option" onClick={closeMobileMenu}>
-                        <a href="/contact">CONTACT</a>
+                        <a href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>

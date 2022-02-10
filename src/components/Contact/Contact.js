@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import "./contact.css";
+import { Typewriter } from 'react-simple-typewriter'
+
 import Social from '../Social/Social';
 
 
@@ -28,49 +30,8 @@ const messages = [
   'thank you',
 ];
 
-const useInterval = (callback, delay) => {
-  const savedCallback = useRef();
-
-  useEffect(() => {
-    savedCallback.current = callback;
-  }, [callback]);
-
-  useEffect(() => {
-    if (delay) {
-      const id = setInterval(() => {
-        savedCallback.current();
-      }, delay);
-      return () => clearInterval(id);
-    }
-    return () => {}; // pass linter
-  }, [delay]);
-};
 
 const Contact = () => {
-  const hold = 50; // ticks to wait after message is complete before rendering next message
-  const delay = 50; // tick length in mS
-
-  const [idx, updateIter] = useState(0); // points to current message
-  const [message, updateMessage] = useState(messages[idx]);
-  const [char, updateChar] = useState(messages[idx].length); // points to current char
-  const [isActive, setIsActive] = useState(true); // disable when all messages are printed
-
-  useInterval(() => {
-    let newIdx = idx;
-    let newChar = char;
-    if (char - hold >= messages[idx].length) {
-      newIdx += 1;
-      newChar = 0;
-    }
-    if (newIdx === messages.length) {
-      setIsActive(false);
-    } else {
-      updateMessage(messages[newIdx].slice(0, newChar));
-      updateIter(newIdx);
-      updateChar(newChar + 1);
-    }
-  }, isActive ? delay : null);
-
   return (
     <> 
         <article className="post" id="contact">
@@ -81,17 +42,25 @@ const Contact = () => {
         </header>
         <div className="email-at">
           <p>Feel free to get in touch. You can email anything like  </p>
-          <div
-            className="inline-container"
-            style={validateText(message) ? {} : { color: 'red' }}
-            onMouseEnter={() => setIsActive(false)}
-            onMouseLeave={() => (idx < messages.length) && setIsActive(true)}
-          >
-              <span>{message}</span>
+          <div className ="inline-cotainer">
+          <Typewriter
+                words={messages}
+                loop={false}
+                cursor
+                cursorStyle='|'
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={1000}
+              />
           </div>
           <p id="copyright">Copyright- Divanshu Sharma, 2022</p>
         </div>
+        <div className='stuff'>
+        <button className="btn" type="button">
+                <a href='https://drive.google.com/uc?export=download&id=1Im9heQNKd42BP9cfpOYogZX0NfpXycUC'>Download Resume</a>
+            </button>
         <Social />
+        </div>
       </article>
     </>
   );

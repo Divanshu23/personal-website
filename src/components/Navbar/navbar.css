@@ -34,11 +34,11 @@
       cursor: pointer;
   }
   .logo-nav {
-    margin-right: 9%;
+    margin-right: 10%;
   }
   .nav-options {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
     grid-gap: 200px;
     list-style-type: none;
   }

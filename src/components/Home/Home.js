@@ -2,10 +2,10 @@ import "./home.css";
 import { Typewriter } from 'react-simple-typewriter'
 import Social from "../Social/Social";
 import Particle from "../Particle/Particle";
+import ResumeBtn from "../Resume/ResumeBtn";
 const Home = () => {
   return (
     <>
-      {/* <Particle /> */}
       <div className="i">
         <div className="i-left">
           <div className="i-left-wrapper">
@@ -30,6 +30,7 @@ const Home = () => {
                 <div className="i-title-item">Basketball Player</div>
               </div>
             </div>
+            <ResumeBtn />
           </div>
         </div>
         <div className="i-right">
@@ -43,7 +44,7 @@ const Home = () => {
             </p>
             </div>
             <div className="contact" >
-            <button onClick={() => { window.location.href = "/contact" }} id="btn">Let's Work Together?
+            <button onClick={() => { window.location.href = "#contact" }} id="btn">Let's Work Together?
             </button>
             <Social />
             </div>
